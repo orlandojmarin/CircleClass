@@ -24,27 +24,31 @@ public class Circle
         radius = 0.0;
     }
     
+    // setRadius changes the value of the radius with the specified argument
     public void setRadius(double circleRadius)
     {
         radius = circleRadius;
     }
     
+    // getRadius returns the value of the radius field
     public double getRadius()
     {
         return radius;
     }
     
-    // methods
+    // area calculates and returns the value of the area of the circle
     public double area()
     {
         return PI * radius * radius;
     }
     
+    // diameter calculates and returns the value of the diameter of the circle
     public double diameter()
     {
         return radius * 2;
     }
     
+    // circumference calculates and returns the value of the circumference of the circle
     public double circumference()
     {
         return 2 * PI * radius;
