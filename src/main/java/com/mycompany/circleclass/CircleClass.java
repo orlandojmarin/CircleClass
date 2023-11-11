@@ -14,7 +14,7 @@ public class CircleClass {
     public static void main(String[] args) 
     {
         // variables
-        double pizzaRadius; // user's input for the radius of the pizza
+        double pizzaRadius; // user's input for the radius of the pizza in inches
 
         // define keyboard object
         Scanner keyboard = new Scanner(System.in);
