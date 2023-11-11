@@ -14,35 +14,37 @@ public class Circle
     private double radius;
     private final double PI = 3.14159;
     
+    // this is a constructor that accepts the radius of the circle as an argument
     public Circle(double circleRadius)
     {
         radius = circleRadius;
     }
     
+    // this is a constructor with no argument that sets the radius field to 0.0
     public Circle()
     {
         radius = 0.0;
     }
     
-    // setRadius changes the value of the radius with the specified argument
+    // the setRadius method changes the value of the radius with the specified argument
     public void setRadius(double circleRadius)
     {
         radius = circleRadius;
     }
     
-    // getRadius returns the value of the radius field
+    // the getRadius method returns the value of the radius field
     public double getRadius()
     {
         return radius;
     }
     
-    // area calculates and returns the value of the area of the circle
+    // the area method calculates and returns the value of the area of the circle
     public double area()
     {
         return PI * radius * radius;
     }
     
-    // diameter calculates and returns the value of the diameter of the circle
+    // the diameter method calculates and returns the value of the diameter of the circle
     public double diameter()
     {
         return radius * 2;

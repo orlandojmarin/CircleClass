@@ -14,7 +14,7 @@ public class CircleClass {
     public static void main(String[] args) 
     {
         // variables
-        double circleRadius;
+        double pizzaRadius; // user's input for the radius of the pizza
 
         // define keyboard object
         Scanner keyboard = new Scanner(System.in);
@@ -22,20 +22,19 @@ public class CircleClass {
         // ask the user for the circle's radius in inches
         System.out.println("What is the radius of Orlando's pizza, in inches?");
         
-        // read the user's response
-        circleRadius = keyboard.nextDouble;
+        // read the user's response for the pizza's radius in inches
+        pizzaRadius = keyboard.nextDouble();
         
-        // create a circle object (pizza)
-        Circle pizza = new Circle(circleRadius);
+        // create a circle object, which will be a delicious pizza
+        Circle pizza = new Circle(pizzaRadius);
         
-        // report the circle / pizza's area, diameter, and circumference
-        pizza.area();
-        System.out.println("The area of Orlando Marin's pizza is " + pizza.area());
+        // calculate and display the the area of the tasty pizza
+        System.out.println("The area of Orlando Marin's pizza is " + pizza.area() + " square inches");
         
-        pizza.diameter();
-        System.out.println("The diameter of Orlando Marin's pizza is " + pizza.diameter());
+        // calculate and display the diameter of the yummy pizza
+        System.out.println("The diameter of Orlando Marin's pizza is " + pizza.diameter() + " inches");
         
-        pizza.circumference();
-        System.out.println("The circumference of Orlando Marin's pizza is " + pizza.circumference());
+        // calculate and display the circumference of the mouth watering pizza
+        System.out.println("The circumference of Orlando Marin's pizza is " + pizza.circumference() + " inches");
     }
 }
